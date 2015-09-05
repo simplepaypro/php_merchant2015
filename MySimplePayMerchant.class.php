@@ -29,7 +29,7 @@ class MySimplePayMerchant extends SimplePayAbstractMerchant {
             /**
              * Адрес Result URL на Вашем сайте.
              */
-            $result_url = "http://tchost.ru/sptest/result.php",
+            $result_url = "http://yoursite.ru/sp/result.php",
             /*
              * Алгоритм хеширования подписей. Безопаснее использовать SHA256.
              * Этот параметр можно изменить по адресу: https://secure.simplepay.pro/merchant/#tab_outlets
