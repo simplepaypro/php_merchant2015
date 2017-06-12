@@ -244,7 +244,7 @@ abstract class SimplePayAbstractMerchant {
         }
         
         // получаем имя скрипта result
-        $result_script_name = basename($this->result_url);
+        $result_script_name = preg_match('/(.*)\/$/', $this->result_url) ? '' : basename($this->result_url);
         
         // формируем правильную подпись для полученного набора параметров
         $right_sig = $this->make_signature_string_result($REQUEST_PARAMS, $result_script_name);
